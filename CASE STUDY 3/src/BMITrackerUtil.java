@@ -25,7 +25,7 @@ public class BMITrackerUtil {
 
             }
 
-            return  new BMITracker(height , weight);
+            return  new BMITracker(weight , height);
         } catch (NumberFormatException e ) {
             System.out.println("Invaid Input .. please input numeric value");
             return null;
@@ -70,9 +70,18 @@ public class BMITrackerUtil {
                         printRecord(record);
                     break;
 
-                    
+                    case 3 :
+                        System.out.println("Exiting Program...");
+                        sc.close();
+                        return;
+
+                    default:
+                        System.out.println("Invalid choice...");
 
                 }
+            }catch (NumberFormatException e)
+            {
+                System.out.println("Invalid Input.... input should be numeric between 1 - 3");
             }
         }
     }

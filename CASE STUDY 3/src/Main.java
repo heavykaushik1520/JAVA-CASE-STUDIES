@@ -17,6 +17,7 @@ Define the class Program with a main method to test the functionality of the uti
 */
 public class Main {
     public static void main(String[] args) {
-
+        BMITrackerUtil util = new BMITrackerUtil();
+        util.menuList();
     }
 }
